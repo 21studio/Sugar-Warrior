@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour {
 
 		mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-		transform.localScale = Vector3.one * Progression.Growth;
+		transform.localScale = Vector3.one * Progression.Growth; // 진행도에 따리 크기와 속도를 변경
 		moveSpeed = startMoveSpeed * Progression.Growth;
 	}
 

@@ -72,7 +72,7 @@ public class Bullet : MonoBehaviour {
 	{
 		if (target != null)
 		{
-			target.TakeDamage(damage);
+			target.TakeDamage(damage); // (bullet 에게) target 은 데미지를 받는다			
 		}
 
 		if (explodeOnImpact && !enemyBullet)
@@ -83,7 +83,7 @@ public class Bullet : MonoBehaviour {
 				Enemy enemy = t.GetComponent<Enemy>();
 				if (enemy != null)
 				{
-					enemy.TakeDamage(damage);
+					enemy.TakeDamage(damage); // (explode bullet 에게) enemy 는 데미지를 받는다
 				}
 
 				Bullet bullet = t.GetComponent<Bullet>();

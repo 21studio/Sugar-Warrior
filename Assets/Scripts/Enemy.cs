@@ -13,7 +13,7 @@ public class Enemy : Entity {
 		if (player != null)
 		{
 			if (!Progression.IsGrowing)
-				player.TakeDamage(damage);
+				player.TakeDamage(damage); // (enemy 에게) player 는 데미지를 받는다
 
 			base.Die();
 		}
